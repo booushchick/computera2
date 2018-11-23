@@ -1,0 +1,48 @@
+void DisplayBoard(int CMCheckersBoard[MAX_ARRAY_SIZE][MAX_ARRAY_SIZE], int numRowsInBoard)
+{
+	int y = 0;
+	int x = 0;
+	const int WS = 1;
+	const int WM = 2;
+	const int WK = 3;
+	const int RS = 4;
+	const int RM = 5;
+	const int RK = 6;
+	int flag = 0;
+	for (x = 0; x < numRowsInBoard; x++)
+	{
+		for (y = 0; y < numRowsInBoard; y++)
+		{
+			if (CMCheckersBoard[x][y] == WS)
+			{
+				cout << "WS ";
+
+			}
+			else if (CMCheckersBoard[x][y] == WM)
+			{
+				cout << "WM ";
+			}
+			else if (CMCheckersBoard[x][y] == WK)
+			{
+				cout << "WK ";
+			}
+			else if (CMCheckersBoard[x][y] == RS)
+			{
+				cout << "RS ";
+			}
+			else if (CMCheckersBoard[x][y] == RM)
+			{
+				cout << "RM ";
+			}
+			else if (CMCheckersBoard[x][y] == RK)
+			{
+				cout << "RK ";
+			}
+			else
+			{
+				cout << CMCheckersBoard[x][y]; //<<i*numRowsInBoard+j << " ";
+			}
+		}
+	}
+
+}
